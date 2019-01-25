@@ -1,8 +1,11 @@
 class User < ApplicationRecord
   validates :name, presence: true
   validates :email, presence: true
+  validates :password,presence: true
 
   has_secure_password
+
+  has_many :topics
 
   validates :password, length: { in: 8..32 }
   validates :password_confirmation, length: { in: 8..32 }
