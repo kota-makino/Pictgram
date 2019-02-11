@@ -8,6 +8,8 @@ class User < ApplicationRecord
   has_many :topics
   has_many :favorites
   has_many :favorite_topics, through: :favorites, source: 'topic'
+  has_many :comments
+  has_many :comment_topics
 
   validates :password, length: { in: 8..32 }
   validates :password_confirmation, length: { in: 8..32 }

@@ -116,10 +116,13 @@ h1, h2 {
     margin-top: 20px;
     border: 1px solid #e6ecf0;
     border-radius: 3px;
+
     .topic-author {
       padding-right: 20px;
       padding-left: 20px;
     }
+
+
 
     .topic-text {
       padding-right: 20px;
@@ -136,6 +139,28 @@ h1, h2 {
       width: 35px;
       height: 30px;
       margin-left: 20px;
+
     }
+
+    .topic-index-icon2 {
+      width: 35px;
+      height: 30px;
+      margin-left: 20px;
+      background-color: red;
+
+    }
+
+
+
+
+
   }
+}
+
+.comment-title {
+  padding-left: 20px;
+}
+
+.comment-text {
+  padding-left: 20px;
 }
